@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* fundo branco */
+    border: 1px solid #333; /* borda preta */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    opacity: 50%;
+    position: relative;
+  }
+  
+  .character-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    opacity: 50%;
+  }
+  
+  .character-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .character-image:nth-child(1) {
+    background-image: url('yuta.jpg');
+  }
+  
+  .character-image:nth-child(2) {
+    background-image: url('download.jpg');
+  }
+  
+  .character-image:nth-child(3) {
+    background-image: url('characters/3.jpg');
+  }
+  
+  .character-image:hover {
+    border-color: #ff0000; /* borda vermelha ao passar o mouse */
+  }
+  
+  #character-name {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #333; /* borda preta */
+    border-radius: 5px;
+    margin-bottom: 30px; /* adicionado espaço entre a barra de nome e o botão Enviar */
+  }
+  
+  #submit-button {
+    background-color: #ff0000; /* fundo vermelho */
+    color: #fff; /* texto branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #submit-button:hover {
+    background-color: #cc0000; /* fundo vermelho escuro ao passar o mouse */
+  }
+  
+  #result {
+    font-size: 18px;
+    color: #333; /* texto preto */
+    margin-top: 20px;
+  }
+  
+  .correct {
+    color: #0f0; /* texto verde para acertos */
+  }
+  
+  .error {
+    color: #f00; /* texto vermelho para erros */
+  }
